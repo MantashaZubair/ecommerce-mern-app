@@ -6,7 +6,7 @@ const createCategoryController = async (req,res)=>{
  try {
     const {name}=req.body
     if(!name){
-        res.send(401).send({
+       return res.send(401).send({
             message:'name is required'
         })
     }
